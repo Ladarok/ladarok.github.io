@@ -1,21 +1,43 @@
 /*
 *** Primary color:
 
-   shade 0 = #171414 = rgb( 23, 20, 20) = rgba( 23, 20, 20,1) = rgb0(0.09,0.078,0.078)
-   shade 1 = #5C5C5C = rgb( 92, 92, 92) = rgba( 92, 92, 92,1) = rgb0(0.361,0.361,0.361)
-   shade 3 = #55100E = rgb( 85, 16, 14) = rgba( 85, 16, 14,1) = rgb0(0.333,0.063,0.055)
+   shade 0 = #191919 = rgb( 25, 25, 25) = rgba( 25, 25, 25,1) = rgb0(0.098,0.098,0.098)
+   shade 1 = #8E0198 = rgb(142,  1,152) = rgba(142,  1,152,1) = rgb0(0.557,0.004,0.596)
+   shade 2 = #55015B = rgb( 85,  1, 91) = rgba( 85,  1, 91,1) = rgb0(0.333,0.004,0.357)
+   shade 3 = #B722C2 = rgb(183, 34,194) = rgba(183, 34,194,1) = rgb0(0.718,0.133,0.761)
+   shade 4 = #D15BDA = rgb(209, 91,218) = rgba(209, 91,218,1) = rgb0(0.82,0.357,0.855)
 
-*** Complement color:
+*** Secondary color (1):
 
-   shade 0 = #0F0E0F = rgb( 15, 14, 15) = rgba( 15, 14, 15,1) = rgb0(0.059,0.055,0.059)
-   shade 1 = #3F3F3F = rgb( 63, 63, 63) = rgba( 63, 63, 63,1) = rgb0(0.247,0.247,0.247)
-   shade 3 = #200E3A = rgb( 32, 14, 58) = rgba( 32, 14, 58,1) = rgb0(0.125,0.055,0.227)  
+   shade 0 = #242424 = rgb( 36, 36, 36) = rgba( 36, 36, 36,1) = rgb0(0.141,0.141,0.141)
+   shade 1 = #D60032 = rgb(214,  0, 50) = rgba(214,  0, 50,1) = rgb0(0.839,0,0.196)
+   shade 2 = #80001E = rgb(128,  0, 30) = rgba(128,  0, 30,1) = rgb0(0.502,0,0.118)
+   shade 3 = #F12857 = rgb(241, 40, 87) = rgba(241, 40, 87,1) = rgb0(0.945,0.157,0.341)
+   shade 4 = #F66587 = rgb(246,101,135) = rgba(246,101,135,1) = rgb0(0.965,0.396,0.529)
+
+*** Secondary color (2):
+
+   shade 0 = #1B1B1B = rgb( 27, 27, 27) = rgba( 27, 27, 27,1) = rgb0(0.106,0.106,0.106)
+   shade 1 = #3C0B9F = rgb( 60, 11,159) = rgba( 60, 11,159,1) = rgb0(0.235,0.043,0.624)
+   shade 2 = #250860 = rgb( 37,  8, 96) = rgba( 37,  8, 96,1) = rgb0(0.145,0.031,0.376)
+   shade 3 = #6332C7 = rgb( 99, 50,199) = rgba( 99, 50,199,1) = rgb0(0.388,0.196,0.78)
+   shade 4 = #8E68DD = rgb(142,104,221) = rgba(142,104,221,1) = rgb0(0.557,0.408,0.867)
+
+***	Others:
+	shade 0 = #c7c7c7c5
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Days+One|Libre+Baskerville|Orbitron|Quantico|Russo+One|Syncopate');
+
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Quantico', sans-serif;
+font-family: 'Days One', sans-serif;
 */
-
-@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Libre+Baskerville');
-
-/*font-family: 'Libre Baskerville', serif;
-font-family: 'Allerta Stencil', sans-serif;*/
 
 * {
 	margin: 0;
@@ -23,24 +45,55 @@ font-family: 'Allerta Stencil', sans-serif;*/
 }
 
 body {
-	background-color: #0F0E0F
+	background-color: #1B1B1B
 }
 
 header {
-	background: #171414;
-	padding: 1.1em;
+	background: #242424;
 	text-align: center;
+	padding-bottom: 1.5em;
+}
+
+header h1 {
+	font-family: 'Russo One', sans-serif;
+	text-decoration: underline;
+	color: #c7c7c7c7;
+	font-size: 3em;
+	padding: 0.5em;
 }
 
 header a {
+	font-family: 'Orbitron', sans-serif;
+	color: #5C5C5C;
 	text-decoration: none;
 	font-size: 1.5em;
-	font-style: 	
+	margin: 4em;
+	font-weight: bold;
 }
 
-h1 {
-	color: ;
-	}
+main {
+
+}
+h2 {
+	text-align: center;
+	font-size: 3em;
+}
+
+h2.dib{font-family: 'Quantico', sans-serif;}
+
+h2.art{font-family: 'Days One', sans-serif;}
+
+h2.fot{font-family: 'Syncopate', sans-serif;}
+
+main a {
+	color: #5C5C5C;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+img {
+	image-rendering: 300px;
+}
 
 article {
 	color: #c7c7c7c5;
@@ -48,12 +101,13 @@ article {
 }
 
 article .title {
-	background-color: #200E3A;
+	color: #c7c7c7c7;
 	display: block;
 	font-family: 'Allerta Stencil', sans-serif;
 	font-size: 2.5em;
 	font-weight: normal;
 	text-align: center;
+	padding: 0.6em;
 }
 
 article figure img {
@@ -67,7 +121,7 @@ article figure {
 }
 
 article .header_fem {
-	background-color: #200E3A;
+	background: linear-gradient(#242424 0%, #250860 20%, #3C0B9F  55%, #1B1B1B 100%);
 }
 
 article p, article blockquote, article h3 {
@@ -94,8 +148,10 @@ main {
 }
 
 footer {
-	background-color: ; 
+	background-color: #6332C7; 
 	padding: 1.5em 2.0em;
 	text-align: center;
-	color: ;
+	color: #191919;
+	font-weight: bold;
+	font-size: 1.2em;
 }
