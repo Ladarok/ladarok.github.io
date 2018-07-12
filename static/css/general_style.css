@@ -83,16 +83,29 @@ h2.dib{font-family: 'Quantico', sans-serif;}
 
 h2.art{font-family: 'Days One', sans-serif;}
 
-h2 .fot{font-family: 'Syncopate', sans-serif;}
+h2.fot{font-family: 'Syncopate', sans-serif;}
 
-main a {
+main a.art {
 	color: #5C5C5C;
 	font-size: 1.5em;
 	text-decoration: none;
 }
 
 img {
-	image-rendering: 300px;
+	width: 300px;
+}
+
+p{
+	font-size: 1em;
+	color: #c7c7c7c5;
+	font-family: 'Libre Baskerville', serif;
+	text-align: justify;
+	padding: 1em 5em;
+}
+
+a.text{
+	text-decoration: none;
+	color: #F66587;
 }
 
 article {
@@ -141,10 +154,6 @@ article blockquote.opinion {
 	text-align: left;
 	font-size: 1.8em;
 	font-weight: bold;
-}
-
-main {
-	background-color:;
 }
 
 footer {
